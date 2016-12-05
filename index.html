@@ -32,7 +32,9 @@
 						<li>Iniciar um Workspace PHP</li>
 						<li>Compartilhar o Workspace</li>
 						<li>Comandos Git Básicos</li>
+						<li>Recomendações/Boas Práticas</li>
 					</ol>
+					<p class="small">Esta apresentação está disponível em: <a href="https://guipedreira.github.io/tutorial-tecwebii/">https://guipedreira.github.io/tutorial-tecwebii/</a></p>
 				</section>
 				<section>
 					<h1>Criar conta GitHub</h1>
@@ -194,9 +196,70 @@ seuusuario:~/workspace (master) $ git add index.php (novoarquivo.txt)
 				<section>
 					<h3>Comandos Git Básicos</h3>
 					<pre><code data-trim data-noescape>
-seuusuario:~/workspace(master)
+seuusuario:~/workspace(master)$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.php
 					</code></pre>
-					<p> Incluimos um novo arquivo, mas ainda não adicionamos ele ao repositório (Untracked files).</p>
+					<p>Agora o Git está controlando a versão do nosso arquivo index.php</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace(master)$ git commit -m "Commit Inicial"
+					</code></pre>
+					<p>Para criarmos uma "versão" do nosso código, e adicionarmos uma mensagem à ela.</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<p>Para conferir se a integração com o GitHub está correta:</p>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace(master)$ git remote -v
+origin  https://github.com/seuusuario/tecwebii.git (fetch)
+origin  https://github.com/seuusuario/tecwebii.git (push)
+					</code></pre>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace(master)$ git push
+Username for 'https://github.com': seuusuario
+Password for 'https://seuusuario@github.com': [suasenhaaqui] (não mostra *)
+Counting objects: 121, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (114/114), done.
+Writing objects: 100% (121/121), 2.16 MiB | 674.00 KiB/s, done.
+Total 121 (delta 15), reused 0 (delta 0)
+remote: Resolving deltas: 100% (15/15), done.
+To https://github.com/guipedreira/tutorial-tecwebii.git
+   5e207b3..56d12e6  master -> master
+					</code></pre>
+					<p>Com este comando, enviamos nosso código para o GitHub (que foi configurado como repositório remoto)</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<p>Ao acessarmos o GitHub novamente:</p>
+					<img src="img/21.jpg" alt="">
+				</section>
+				<section>
+					<h1>Recomendações</h1>
+				</section>
+				<section>
+					<h3>Recomendações</h3>
+					<ul>
+						<li>Utilize sempre o Cloud9 para editar seus códigos.<br>Caso não seja possível, cole o código alterado no Cloud9 quando estiver online.</li>
+						<li>Sempre que fizer uma alteração razoavelmente grande (terminar uma página nova, ou uma nova funcionalidade), faça um<pre><code>git commit</code></pre></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Recomendações</h3>
+					<ul>
+						<li>Sempre faça um <pre><code>git commit</code></pre>e em seguida um<pre><code>git push</code></pre>assim, você mantem as versões corretas em ambos os lugares.</li>
+					</ul>
 				</section>
 			</div>
 		</div>
