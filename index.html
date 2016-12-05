@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tutorial TecWeb II</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Agenda...</h1>
+					<ol>
+						<li>Criar conta GitHub</li>
+						<li>Criar conta Cloud9</li>
+						<li>Iniciar um Workspace PHP</li>
+						<li>Compartilhar o Workspace</li>
+						<li>Comandos Git Básicos</li>
+					</ol>
+				</section>
+				<section>
+					<h1>Criar conta GitHub</h1>
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<p>Acessar: <a href="http://www.github.com">http://www.github.com</a></p>
+					<img src="img/1.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/2.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/3.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/4.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/5.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/6.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<img src="img/7.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta GitHub</h3>
+					<p>Copie este link:</p>
+					<img src="img/8.jpg" alt="">
+					<p>Ele será útil.</p>
+				</section>
+				<section>
+					<h1>Criar conta Cloud9</h1>
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<p>Acessar: <a href="http://www.c9.io">http://www.c9.io</a></p>
+					<img src="img/9.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<p>Utilize os dados da conta do Github</p>
+					<img src="img/10.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/11.jpg" alt="">
+					<p>Um nome de exibi&ccedil;ão para os outros usuarios</p>
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/12.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/13.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/14.jpg" alt="">
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/15.jpg" alt="">
+					<p>Dados do cartão de crédito (nada será cobrado)</p>
+				</section>
+				<section>
+					<h3>Criar conta Cloud9</h3>
+					<img src="img/16.jpg" alt="">
+					<p>E autorize o Cloud 9 acessar os dados do seu GitHub</p>
+				</section>
+				<section>
+					<h1>Iniciando um Workspace PHP</h1>
+				</section>
+				<section>
+					<h3>Workspace PHP</h3>
+					<img src="img/17.jpg" alt="">
+				</section>
+				<section>
+					<h3>Workspace PHP</h3>
+					<img src="img/18.jpg" alt="">
+				</section>
+				<section>
+					<h3>Compartilhando Workspace</h3>
+					<img src="img/19.jpg" alt="">
+				</section>
+				<section>
+					<h3>Compartilhando Workspace</h3>
+					<img src="img/20.jpg" alt="">
+				</section>
+				<section>
+					<h1>Comandos Git Básicos</h1>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>seuusuario:~/workspace(master)$git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+					</code></pre>
+					<p> Tudo OK!, seu repositório está na ultima versão</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<p>Crie um arquivo PHP no workspace!</p>
+					<pre><code data-trim>
+<!--Remova os comentários
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Olá Mundo!</title>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+</body>
+</html>
+-->
+					</code></pre>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace(master)$git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+					</code></pre>
+					<p> Incluimos um novo arquivo, mas ainda não adicionamos ele ao repositório (Untracked files).</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace (master) $ git add .
+					</code></pre>
+					<p>Assim incluimos todos os novos arquivos ao repositório.</p>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace (master) $ git add index.php
+					</code></pre>
+					<p>Poderíamos incluir apenas o index.php ao repositório.</p>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace (master) $ git add index.php (novoarquivo.txt)
+					</code></pre>
+					<p>ou poderíamos incluir alguns arquivos ao repositório.</p>
+				</section>
+				<section>
+					<h3>Comandos Git Básicos</h3>
+					<pre><code data-trim data-noescape>
+seuusuario:~/workspace(master)
+					</code></pre>
+					<p> Incluimos um novo arquivo, mas ainda não adicionamos ele ao repositório (Untracked files).</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
